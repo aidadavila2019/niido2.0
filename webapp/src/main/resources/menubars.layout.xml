@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mb3:menuBars xsi:schemaLocation="http://isis.apache.org/applib/layout/menubars/bootstrap3 http://isis.apache.org/applib/layout/menubars/bootstrap3/menubars.xsd http://isis.apache.org/applib/layout/component http://isis.apache.org/applib/layout/component/component.xsd http://isis.apache.org/applib/layout/links http://isis.apache.org/applib/layout/links/links.xsd" xmlns:cpt="http://isis.apache.org/applib/layout/component" xmlns:lnk="http://isis.apache.org/applib/layout/links" xmlns:mb3="http://isis.apache.org/applib/layout/menubars/bootstrap3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <mb3:primary>
+        <mb3:menu>
+            <mb3:named>Simple Objects</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.SimpleObjects" id="create">
+                    <cpt:named>Create</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.SimpleObjects" id="findByName">
+                    <cpt:named>Find By Name</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.SimpleObjects" id="listAll">
+                    <cpt:named>List All</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu unreferencedActions="true">
+            <mb3:named>Other</mb3:named>
+        </mb3:menu>
+        <mb3:menu>
+        <mb3:named>Users</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findNameByUserSubscriptionId">
+                    <cpt:named>Find Name By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="generateSubscriptionv200">
+                    <cpt:named>Generate Subscriptionv 200</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findFriendUserSubscriptionsByUserName">
+                    <cpt:named>Find Friend User Subscriptions By User Name</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findRoleDateByUserSubscriptionId">
+                    <cpt:named>Find Role Date By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findFriendUserSubscriptionsByUserNameCount">
+                    <cpt:named>Find Friend User Subscriptions By User Name Count</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findFriendUserSubscriptionsByUserNamev157">
+                    <cpt:named>Find Friend User Subscriptions By User Namev 157</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsTest">
+                    <cpt:named>Find User Subscriptions Test</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionById">
+                    <cpt:named>Find User Subscription By Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByRole">
+                    <cpt:named>Find User Subscriptions By Role</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="addConfigureUserNotificationAllUsers">
+                    <cpt:named>Add Configure User Notification All Users</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findNewUsers">
+                    <cpt:named>Find New Users</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="followAndFriendAll">
+                    <cpt:named>Follow And Friend All</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="changeProfilePicturesv181">
+                    <cpt:named>Change Profile Picturesv 181</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUsersRandom">
+                    <cpt:named>Find Users Random</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsPendingForReview">
+                    <cpt:named>Find User Subscriptions Pending For Review</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByUserPrivate">
+                    <cpt:named>Find User Subscriptions By User Private</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findRoleByUserSubscriptionId">
+                    <cpt:named>Find Role By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findProfileBackGroundUrl">
+                    <cpt:named>Find Profile Back Ground Url</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findProfileByUserSubscriptionId">
+                    <cpt:named>Find Profile By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="addSubscription">
+                    <cpt:named>Add Subscription</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findAdAudience">
+                    <cpt:named>Find Ad Audience</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByUser">
+                    <cpt:named>Find User Subscriptions By User</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByInstanceId">
+                    <cpt:named>Find User Subscriptions By Instance Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findWebUserByUserSubscriptionId">
+                    <cpt:named>Find Web User By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="addConfigureUserNotification">
+                    <cpt:named>Add Configure User Notification</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionTagv157">
+                    <cpt:named>Find User Subscription Tagv 157</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="followNewAdvertiser">
+                    <cpt:named>Follow New Advertiser</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="changeProfilePictures">
+                    <cpt:named>Change Profile Pictures</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="listAllUserSubscriptions">
+                    <cpt:named>List All User Subscriptions</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByWebUser">
+                    <cpt:named>Find User Subscriptions By Web User</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="friendAll">
+                    <cpt:named>Friend All</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionByIdv157">
+                    <cpt:named>Find User Subscription By Idv 157</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findLastNewUserSubscriptions">
+                    <cpt:named>Find Last New User Subscriptions</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="addConfigureUserNotificationAllUsersByNotificationType">
+                    <cpt:named>Add Configure User Notification All Users By Notification Type</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findAdAudienceByUserSubscriptionId">
+                    <cpt:named>Find Ad Audience By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByUserName">
+                    <cpt:named>Find User Subscriptions By User Name</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findFriendsByUserSubscriptionIdTagv167">
+                    <cpt:named>Find Friends By User Subscription Id Tagv 167</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="reviewCode">
+                    <cpt:named>Review Code</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findPrivateAccountByUserSubscription">
+                    <cpt:named>Find Private Account By User Subscription</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionv157">
+                    <cpt:named>Find User Subscriptionv 157</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="findUserSubscriptionsByUserNamev1106">
+                    <cpt:named>Find User Subscriptions By User Namev 1106</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="deleteSubscription">
+                    <cpt:named>Delete Subscription</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="updAdClientType">
+                    <cpt:named>Upd Ad Client Type</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userSubscriptionRepository" id="addConfigureUserNotificationByNotificationType">
+                    <cpt:named>Add Configure User Notification By Notification Type</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="userProfilePictureSmallRepository" id="findUserProfilePictureSmallById">
+                    <cpt:named>Find User Profile Picture Small By Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userProfilePictureSmallRepository" id="addUserProfilePictureSmall">
+                    <cpt:named>Add User Profile Picture Small</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userProfilePictureSmallRepository" id="addUserProfilePictureSmall">
+                    <cpt:named>Add User Profile Picture Small</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="configureUserNotificationRepository" id="findConfigureUserNotificationByUserSubscription">
+                    <cpt:named>Find Configure User Notification By User Subscription</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="configureUserNotificationRepository" id="findConfigureUserNotificationByUserSubscriptionType">
+                    <cpt:named>Find Configure User Notification By User Subscription Type</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="configureUserNotificationRepository" id="addConfigureUserNotification">
+                    <cpt:named>Add Configure User Notification</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="userProfilePictureMediumRepository" id="findUserProfilePictureMediumById">
+                    <cpt:named>Find User Profile Picture Medium By Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userProfilePictureMediumRepository" id="addUserProfilePictureMedium">
+                    <cpt:named>Add User Profile Picture Medium</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userProfilePictureMediumRepository" id="addUserProfilePictureMedium">
+                    <cpt:named>Add User Profile Picture Medium</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="userDeviceRepository" id="deleteUserDevice">
+                    <cpt:named>Delete User Device</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userDeviceRepository" id="findUserDeviceByCity">
+                    <cpt:named>Find User Device By City</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userDeviceRepository" id="findUserDeviceByUserDeviceId">
+                    <cpt:named>Find User Device By User Device Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userDeviceRepository" id="findUserDeviceByUserSubscription">
+                    <cpt:named>Find User Device By User Subscription</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userDeviceRepository" id="listAllUserDevice">
+                    <cpt:named>List All User Device</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userDeviceRepository" id="addUserDevice">
+                    <cpt:named>Add User Device</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="userRepository" id="findBirthDateByUserId">
+                    <cpt:named>Find Birth Date By User Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="findUsersByName">
+                    <cpt:named>Find Users By Name</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="findUserByEmail">
+                    <cpt:named>Find User By Email</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="findRolByName">
+                    <cpt:named>Find Rol By Name</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="findAllUsers">
+                    <cpt:named>Find All Users</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="findUserById">
+                    <cpt:named>Find User By Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="addUser">
+                    <cpt:named>Add User</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="addUSUserById">
+                    <cpt:named>Add US User By Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="verifyUserNamev1117">
+                    <cpt:named>Verify User Namev 1117</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="userRepository" id="verifyUserName">
+                    <cpt:named>Verify User Name</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Event</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="eventRepository" id="countEventByUserSubscriptionId">
+                    <cpt:named>Count Event By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="eventRepository" id="listAllEvent">
+                    <cpt:named>List All Event</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="eventRepository" id="findEventByUserSubscriptionId">
+                    <cpt:named>Find Event By User Subscription Id</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="eventRepository" id="addEvent">
+                    <cpt:named>Add Event</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="eventRepository" id="existEventByUserSubscriptionIdAndEventName">
+                    <cpt:named>Exist Event By User Subscription Id And Event Name</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Hello World Objects</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="hello.HelloWorldObjects" id="create">
+                    <cpt:named>Create</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="hello.HelloWorldObjects" id="listAll">
+                    <cpt:named>List All</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.CityRepository" id="create">
+                    <cpt:named>Add City</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.CityRepository" id="listAll">
+                    <cpt:named>Find All City</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.OtraCitys" id="create">
+                    <cpt:named>Add OtraCity</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.OtraCitys" id="listAll">
+                    <cpt:named>Find All OtraCity</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Simples Objects</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="simple.SimplesObjects" id="create">
+                    <cpt:named>Create</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="simple.SimplesObjects" id="listAll">
+                    <cpt:named>List All</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+    </mb3:primary>
+    <mb3:secondary>
+        <mb3:menu>
+        <mb3:named>Security</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.ApplicationRoleMenu" id="allRoles">
+                    <cpt:named>All Roles</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationRoleMenu" id="newRole">
+                    <cpt:named>New Role</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationRoleMenu" id="findRoles">
+                    <cpt:named>Find Roles</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.ApplicationTenancyMenu" id="newTenancy">
+                    <cpt:named>New Tenancy</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationTenancyMenu" id="findTenancies">
+                    <cpt:named>Find Tenancies</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationTenancyMenu" id="allTenancies">
+                    <cpt:named>All Tenancies</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.ApplicationPermissionMenu" id="findOrphanedPermissions">
+                    <cpt:named>Find Orphaned Permissions</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationPermissionMenu" id="allPermissions">
+                    <cpt:named>All Permissions</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.ApplicationFeatureViewModels" id="allPackages">
+                    <cpt:named>All Packages</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationFeatureViewModels" id="allClasses">
+                    <cpt:named>All Classes</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationFeatureViewModels" id="allActions">
+                    <cpt:named>All Actions</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationFeatureViewModels" id="allProperties">
+                    <cpt:named>All Properties</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationFeatureViewModels" id="allCollections">
+                    <cpt:named>All Collections</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.ApplicationUserMenu" id="findUsers">
+                    <cpt:named>Find Users</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationUserMenu" id="newLocalUser">
+                    <cpt:named>New Local User</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationUserMenu" id="newDelegateUser">
+                    <cpt:named>New Delegate User</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isissecurity.ApplicationUserMenu" id="allUsers">
+                    <cpt:named>All Users</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isissecurity.MeService" id="me">
+                    <cpt:named>Me</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+        <mb3:menu>
+            <mb3:named>Prototyping</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisExtFixtures.FixtureScripts" id="runFixtureScript">
+                    <cpt:named>Run Fixture Script</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisExtFixtures.FixtureScripts" id="recreateObjectsAndReturnFirst">
+                    <cpt:named>Recreate Objects And Return First</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisApplib.LayoutServiceMenu" id="downloadLayouts">
+                    <cpt:named>Download Object Layouts (ZIP)</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.LayoutServiceMenu" id="downloadMenuBarsLayout">
+                    <cpt:named>Download Menu Bars Layout (XML)</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisApplib.MetaModelServiceMenu" id="downloadMetaModelXml">
+                    <cpt:named>Download Meta Model (XML)</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.MetaModelServiceMenu" id="downloadMetaModelCsv">
+                    <cpt:named>Download Meta Model (CSV)</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisApplib.SwaggerServiceMenu" id="openSwaggerUi">
+                    <cpt:named>Open Swagger Ui</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.SwaggerServiceMenu" id="openRestApi">
+                    <cpt:named>Open Rest Api</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.SwaggerServiceMenu" id="downloadSwaggerSchemaDefinition">
+                    <cpt:named>Download Swagger Schema Definition</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisApplib.TranslationServicePoMenu" id="downloadTranslations">
+                    <cpt:named>Download Translations</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.TranslationServicePoMenu" id="resetTranslationCache">
+                    <cpt:named>Clear translation cache</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.TranslationServicePoMenu" id="switchToReadingTranslations">
+                    <cpt:named>Switch To Reading Translations</cpt:named>
+                </mb3:serviceAction>
+                <mb3:serviceAction objectType="isisApplib.TranslationServicePoMenu" id="switchToWritingTranslations">
+                    <cpt:named>Switch To Writing Translations</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisExtH2Console.H2ManagerMenu" id="openH2Console">
+                    <cpt:named>H2 Console</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+    </mb3:secondary>
+    <mb3:tertiary>
+        <mb3:menu>
+            <mb3:named>Configuration Service Menu</mb3:named>
+            <mb3:section>
+                <mb3:serviceAction objectType="isisApplib.ConfigurationMenu" id="configuration">
+                    <cpt:named>Configuration</cpt:named>
+                </mb3:serviceAction>
+            </mb3:section>
+        </mb3:menu>
+    </mb3:tertiary>
+</mb3:menuBars>
