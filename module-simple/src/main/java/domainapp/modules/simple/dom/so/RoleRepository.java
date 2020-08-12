@@ -3,17 +3,14 @@ package domainapp.modules.simple.dom.so;
 import java.util.List;
 
 import javax.inject.Inject;
+
+import domainapp.modules.simple.SimpleModule;
+import org.apache.isis.applib.annotation.*;
+import org.apache.isis.applib.services.repository.RepositoryService;
+import org.apache.isis.persistence.jdo.applib.services.IsisJdoSupport_v3_2;
 import org.joda.time.DateTime;
 
 import org.apache.isis.applib.Identifier;
-import org.apache.isis.applib.annotation.Action;
-import org.apache.isis.applib.annotation.ActionLayout;
-import org.apache.isis.applib.annotation.BookmarkPolicy;
-import org.apache.isis.applib.annotation.DomainService;
-import org.apache.isis.applib.annotation.DomainServiceLayout;
-import org.apache.isis.applib.annotation.MemberOrder;
-import org.apache.isis.applib.annotation.ParameterLayout;
-import org.apache.isis.applib.annotation.SemanticsOf;
 import org.apache.isis.applib.query.QueryDefault;
 import org.apache.isis.applib.services.clock.ClockService;
 import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
@@ -27,7 +24,7 @@ import org.apache.isis.applib.services.eventbus.ActionDomainEvent;
 @DomainServiceLayout(named = "Role")
 
 public class RoleRepository {
-
+    
     //region > listAllRole (action)
     @Action(
             semantics = SemanticsOf.SAFE
@@ -83,16 +80,23 @@ public class RoleRepository {
     //endregion
 
 
-    //region > addRole(action)
+
+    /*
     public static class CreateDomainEvent extends ActionDomainEvent<RoleRepository> {
         public CreateDomainEvent(final RoleRepository source, final Identifier identifier, final Object... arguments) {
             super(source, identifier, arguments);
         }
     }
-
     @Action(
-            //domainEvent = CreateDomainEvent.class
+            domainEvent = CreateDomainEvent.class
     )
+    */
+
+    //region > addRole(action)
+    public static class ActionDomainEvent extends SimpleModule.ActionDomainEvent<RoleRepository> {}
+    public static class CreateActionDomainEvent extends RoleRepository.ActionDomainEvent {}
+    @Action(semantics = SemanticsOf.NON_IDEMPOTENT, domainEvent = RoleRepository.CreateActionDomainEvent.class)
+    @ActionLayout(promptStyle = PromptStyle.DIALOG_SIDEBAR)
     @MemberOrder(name="Role",sequence = "2")
     public Role addRole(
             final @ParameterLayout(named="Description") String description
@@ -114,7 +118,7 @@ public class RoleRepository {
 
     //region > injected services
 
-    //@javax.inject.Inject
+    @javax.inject.Inject
     DomainObjectContainer container;
 
     //endregion

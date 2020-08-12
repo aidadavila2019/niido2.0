@@ -184,8 +184,8 @@ public class DomainObjectContainer {
     //@Deprecated
     @Programmatic
     public <T> T newTransientInstance(final Class<T> ofType) {
-        //return factoryService.detachedEntity(ofType);
-        return repositoryService.instantiate(ofType);
+        return factoryService.detachedEntity(ofType);
+        //return repositoryService.instantiate(ofType);
     }
 
     /**
